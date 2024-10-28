@@ -4,7 +4,8 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
-      required: true, //Validator
+      required: true,
+      unique: true,
     },
     email: {
       type: String,
@@ -17,12 +18,13 @@ const userSchema = new Schema(
       unique: true,
     },
     password: {
-      type: string,
-      required: true, //Validator
+      type: String,
+      required: true,
     },
   },
   { timestamps: true }
 );
-const user = model("User", userSchema); // the model takes the name of your collection
+
+const User = model("User", userSchema);
 
 export { User };

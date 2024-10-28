@@ -3,7 +3,8 @@ import { model, Schema } from "mongoose";
 const balanceSchema = new Schema(
   {
     user: {
-      type: String,
+      type: Schema.Types.ObjectId,
+      ref: "User",
       required: true,
     },
     balance: {
