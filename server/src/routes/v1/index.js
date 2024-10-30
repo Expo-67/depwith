@@ -1,7 +1,7 @@
 import { Router } from "express";
 
 //middleware imports
-import { requireAuthentication } from "../../../middleware/auth.js";
+import { requiresAuthentication } from "../../middleware/auth.js";
 
 //router imports
 import { authRouter } from "./auth.js";

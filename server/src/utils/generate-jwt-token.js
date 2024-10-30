@@ -1,6 +1,6 @@
-import jwt from "jasonwebtoken"; // we import jwt library
+import jwt from "jsonwebtoken"; // we import jwt library
 
-export const generateJWTToken = (res, user) => {
+export const generateJwtToken = (res, user) => {
   //function definition of generateJWTToken
   //Token generation
   const token = jwt.sign({ user }, process.env.JWT_SECRET, {

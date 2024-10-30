@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import { model, Schema } from "mongoose";
 
 const transactionSchema = new Schema(
   {
@@ -19,6 +19,7 @@ const transactionSchema = new Schema(
   },
   { timestamps: true }
 );
-const transaction = model("Transaction", transactionSchema);
+
+const Transaction = model("Transaction", transactionSchema);
 
 export { Transaction };

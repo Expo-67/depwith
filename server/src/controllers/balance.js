@@ -1,5 +1,5 @@
 import { isValidObjectId } from "mongoose"; // checks if a provided ID is a valid MongoDB project
-import { Balance } from "../database/Models/Balance.js";
+import { Balance } from "../db/models/Balance.js";
 
 // retrieve the balance of a user by their ID
 export const getUserBalance = async (req, res) => {

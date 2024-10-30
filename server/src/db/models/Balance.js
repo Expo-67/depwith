@@ -14,6 +14,6 @@ const balanceSchema = new Schema(
   },
   { timestamps: true }
 );
-const balance = model("Balance", balanceSchema);
+const Balance = model("Balance", balanceSchema);
 
 export { Balance };
